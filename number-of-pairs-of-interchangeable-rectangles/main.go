@@ -1,5 +1,7 @@
 package main
 
+// https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/submissions/
+
 func interchangeableRectangles(rectangles [][]int) int64 {
 	ratio := make(map[float64]int)
 	res := 0
