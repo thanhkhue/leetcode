@@ -73,9 +73,6 @@ func bfsWithExtraMem(root *Node, level int, levelToNodes map[int][]*Node) {
 		return
 	}
 
-	// if levelToNodes[level] == nil {
-	// 	levelToNodes[level] = make([]*Node, 0)
-	// }
 	nodes := levelToNodes[level]
 	if len(nodes) > 0 {
 		nodes[len(nodes)-1].Next = root
